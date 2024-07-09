@@ -9,8 +9,17 @@ if hist_button: # al hacer clic en el botón
     # escribir un mensaje
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
 # crear un histograma
-    fig = px.histogram(car_data, x="odometer")
+    fig = px.histogram(car_data, color = 'type', x="odometer")
+    fig.show()
 # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
+
+
+    fig = px.scatter(car_data, x = 'odometer', y = 'price')
+    fig.show()
+
+    bar = st.selectbox('Seleccione', car_data ['type'].unique())
+
+    st.dataframe(car_data)
 
     
