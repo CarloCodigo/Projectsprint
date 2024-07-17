@@ -32,7 +32,7 @@ if hist_button: # al hacer clic en el botón
         legend_titlle= "Cantidad",
         width= 1000,
         height=600)
-    fig_bar-update_traces(marker={"color": "darkcyan"}),
+    fig_bar-update_traces(marker={"color": "darkcyan"}), # type: ignore
     fig_bar.show()
 
 
