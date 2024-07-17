@@ -26,15 +26,15 @@ if hist_button: # al hacer clic en el botón
 
     fig_bar = px.bar(car_data_bar, x= 'model_year', y= 'model_year', orientation="h")
     fig_bar.update_layout(
-        tittle= "Grafico de modelo de ano de los vehiculos"
-        xaxis_tittle= "Ano"
-        yaxis_tittle= "Ano modelo"
-        legend_titlle= "Cantidad"
+        tittle= "Grafico de modelo de ano de los vehiculos",
+        xaxis_tittle= "Ano",
+        yaxis_tittle= "Ano modelo",
+        legend_titlle= "Cantidad",
         width= 1000,
         height=600)
     fig_bar-update_traces(marker={"color": "darkcyan"}),
     fig_bar.show()
 
-    
+
     
     
